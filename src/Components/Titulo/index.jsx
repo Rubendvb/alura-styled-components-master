@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Titulo = styled.h1`
-  color: #808080;
+  color: ${({ theme }) => theme.text};
 `;
 
 export default Titulo;
