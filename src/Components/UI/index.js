@@ -5,6 +5,10 @@ export const Icone = styled.img`
   width: 25px;
 `;
 
+export const IconeTema = styled(Icone)`
+  filter: ${({ theme }) => theme.filter};
+`;
+
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
@@ -41,5 +45,14 @@ export const Botao = styled.button`
   font-weight: 600;
   font-size: 14px;
   padding: 8px 20px;
+  cursor: pointer;
+`;
+
+export const BtnTema = styled.button`
+  position: absolute;
+  top: 4vh;
+  right: 20px;
+  background-color: inherit;
+  border: none;
   cursor: pointer;
 `;
